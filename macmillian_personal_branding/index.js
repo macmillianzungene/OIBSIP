@@ -1,12 +1,4 @@
-// Mobile Menu Toggle
-const mobileMenu = document.getElementById("mobile-menu");
-const navList = document.querySelector(".nav-list");
-
-mobileMenu.addEventListener("click", () => {
-  navList.classList.toggle("active");
-});
-
-// Smooth Scrolling for Links
+// Smooth Scrolling for Anchor Links
 const links = document.querySelectorAll("a[href^='#']");
 
 links.forEach((link) => {
@@ -19,10 +11,5 @@ links.forEach((link) => {
       top: targetElement.offsetTop - 50,
       behavior: "smooth",
     });
-
-    // Close menu on mobile
-    if (navList.classList.contains("active")) {
-      navList.classList.remove("active");
-    }
   });
 });
