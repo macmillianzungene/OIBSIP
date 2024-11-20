@@ -127,14 +127,14 @@ p {
 
 /* Footer */
 .footer {
-  background: #333;
+  background: #ff5733;
   color: white;
   text-align: center;
   padding: 20px 0;
 }
 
 .footer-links a {
-  color: #ff7849;
+  color: #28089a;
   text-decoration: none;
 }
 
