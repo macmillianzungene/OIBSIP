@@ -1,143 +1,107 @@
-/* General Styles */
+/* General */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #f3eff5, #ffffff);
+  background: linear-gradient(135deg, #ffb6c1, #ffefd5);
   color: #333;
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
-  color: #ff5733;
-}
-
-p {
-  margin: 10px 0;
-  line-height: 1.6;
-}
-
-/* Hero Section */
-.hero {
-  background-color: #ff7849;
-  color: white;
-  padding: 40px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  max-width: 1200px;
-}
-
-.hero-image img {
-  width: 200px;
-  border-radius: 10px;
-}
-
-.hero-text {
-  max-width: 600px;
-}
-
-.hero-text h1 {
-  font-size: 2.5rem;
-}
-
-.hero-text p {
-  margin: 15px 0;
-}
-
-.btn {
-  display: inline-block;
-  background: white;
-  color: #ff5733;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #ff5733;
-  color: white;
-}
-
-/* Call-to-Action Buttons */
-.cta-buttons {
-  background: #f3eff5;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.cta-btn {
-  background: #ff5733;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.cta-btn:hover {
-  background: #ff7849;
-}
-
-/* Features Section */
-.features {
-  background: white;
-  padding: 40px 20px;
-}
-
-.features h2 {
-  margin-bottom: 20px;
-}
-
-.features-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.feature {
-  max-width: 300px;
+/* Header */
+.header {
   text-align: center;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background: #f9f9f9;
+  background: #ff6f61;
+  color: #fff;
 }
 
-.feature img {
+.logo {
   width: 80px;
   margin-bottom: 10px;
 }
 
+/* Sections */
+section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Fun Facts */
+.facts-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.fact-card {
+  text-align: center;
+  background: #f9c74f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.fact-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Testimonials */
+.testimonial-card {
+  background: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff8566;
+}
+
 /* Footer */
 .footer {
-  background: #333;
-  color: white;
   text-align: center;
-  padding: 20px 0;
-}
-
-.footer-links a {
-  color: #ff7849;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
+  padding: 10px;
+  background: #ff6f61;
+  color: #fff;
 }
