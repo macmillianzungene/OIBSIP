@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🌡️ Temperature Converter</h1>
+      <p>
+        Quickly convert temperatures between Celsius, Fahrenheit, and Kelvin!
+      </p>
+    </header>
+
+    <main>
+      <section class="converter-section">
+        <h2>Convert Temperatures</h2>
+
+        <form id="converter-form">
+          <label for="temp-input">Enter Temperature:</label>
+          <input type="text" id="temp-input" placeholder="e.g., 32" required />
+          <p id="error-message"></p>
+
+          <label for="unit-select">Convert From:</label>
+          <select id="unit-select">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+          </select>
+
+          <button type="button" id="convert-btn">Convert</button>
+        </form>
+
+        <div class="output">
+          <h3>Converted Temperature:</h3>
+          <p id="result"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Temperature Converter by <a href="https://github.com/macmillianzungene/OIBSIP.git" target="_blank"
+          >Mac Millian Zungene</a</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

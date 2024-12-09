@@ -1,4 +1,4 @@
-// JavaScript for Temperature Conversion
+/// JavaScript for Temperature Conversion
 
 // Conversion Logic
 function convertTemperature(temp, fromUnit) {
@@ -25,33 +25,33 @@ function convertTemperature(temp, fromUnit) {
   };
 }
 
-// Event Listener
+// Event Listener for Convert Button
 document.getElementById("convert-btn").addEventListener("click", () => {
-  const tempInput = document.getElementById("temp-input");
-  const unitSelect = document.getElementById("unit-select");
+  const tempInput = document.getElementById("temp-input").value.trim();
+  const unitSelect = document.getElementById("unit-select").value;
   const resultDiv = document.getElementById("result");
   const errorMessage = document.getElementById("error-message");
 
-  const temp = parseFloat(tempInput.value);
-  const fromUnit = unitSelect.value;
-
+  // Validate input
+  const temp = parseFloat(tempInput);
   if (isNaN(temp)) {
-    errorMessage.textContent = "Please enter a valid number!";
-    resultDiv.textContent = "";
+    errorMessage.textContent = "❌ Please enter a valid number!";
+    resultDiv.textContent = ""; // Clear the result area
     return;
   }
 
-  errorMessage.textContent = ""; // Clear error message
-  const converted = convertTemperature(temp, fromUnit);
+  errorMessage.textContent = ""; // Clear any previous error
+  const converted = convertTemperature(temp, unitSelect);
 
+  // Display converted temperatures
   resultDiv.innerHTML = `
     <strong>${temp}°${
-    fromUnit === "celsius" ? "C" : fromUnit === "fahrenheit" ? "F" : "K"
+    unitSelect === "celsius" ? "C" : unitSelect === "fahrenheit" ? "F" : "K"
   }</strong> is:
     <ul>
-      <li>${converted.celsius}°C</li>
-      <li>${converted.fahrenheit}°F</li>
-      <li>${converted.kelvin}K</li>
+      <li><b>${converted.celsius}°C</b></li>
+      <li><b>${converted.fahrenheit}°F</b></li>
+      <li><b>${converted.kelvin}K</b></li>
     </ul>
   `;
 });
