@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -19,7 +18,6 @@ p {
   line-height: 1.6;
 }
 
-/* Hero Section */
 .hero {
   background-color: #ff7849;
   color: white;
@@ -71,7 +69,6 @@ p {
   color: white;
 }
 
-/* Call-to-Action Buttons */
 .cta-buttons {
   background: #f3eff5;
   text-align: center;
@@ -94,7 +91,6 @@ p {
   background: #ff7849;
 }
 
-/* Features Section */
 .features {
   background: white;
   padding: 40px 20px;
@@ -125,7 +121,6 @@ p {
   margin-bottom: 10px;
 }
 
-/* Footer */
 .footer {
   background: #ff5733;
   color: white;
